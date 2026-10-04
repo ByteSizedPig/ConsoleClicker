@@ -1,9 +1,11 @@
-﻿namespace ClickerConstructor
+﻿using ConsoleClicker;
+
+namespace ClickerConstructor
 {
     class Clicker
     {
         private int clicks;
-
+        
         //when using JsonSerializer this counts as a field because it doesnt have get and set
         public ConsoleKey InteractKey;
         
@@ -30,17 +32,33 @@
 
         public void Write()
         {
-            Console.WriteLine($"{Clicks} : {InteractKey} Clicks");
+            Console.WriteLine($"{Clicks} : {InteractKey} Clicker");
 
         }
 
         public void KeyPressHandler(ConsoleKey Key)
         { 
-            if (InteractKey == Key) 
+            //if (InteractKey == Key) 
+            //{
+            //    Clicks++;
+            //}
+
+            switch (Key)
             {
-                Clicks++;
+                case ConsoleKey k when k == InteractKey:
+                    Clicks++;
+                    break;
+                case ConsoleKey k when k == ConsoleKey.M:
+                    //Console.WriteLine("which clicker do you want to change?");
+                    //var tochange = Console.ReadKey().Key;
+                    //if(InteractKey == tochange)
+                    //{
+                        Console.Clear();
+                        Console.WriteLine($"press the key you want to change {InteractKey} into");
+                        InteractKey = Console.ReadKey().Key;
+                    //}
+                    break;
             }
-            
         }
     }
 }

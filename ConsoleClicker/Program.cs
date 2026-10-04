@@ -27,17 +27,18 @@ namespace ConsoleClicker
             while (true)
             {
                 Console.Clear();
-
                 foreach (var clicker in clickers)
                 {
                     clicker.Write();
                 }
+                Console.WriteLine("Press M to modify the interaction key for clickers");
 
                 ConsoleKeyInfo KeyPress = Console.ReadKey();
                 foreach (var clicker in clickers)
                 {
                     clicker.KeyPressHandler(KeyPress.Key);
                 }
+
                 Save(clickers);
             }
             
@@ -58,6 +59,7 @@ namespace ConsoleClicker
             var json = JsonSerializer.Serialize(clickers,options);
             File.WriteAllText(fileName, json);
         }
+
         
         
     }

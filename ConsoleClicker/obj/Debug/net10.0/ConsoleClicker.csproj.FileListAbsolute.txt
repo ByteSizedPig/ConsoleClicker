@@ -12,3 +12,4 @@ E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\refint\Console
 E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ConsoleClicker.pdb
 E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ConsoleClicker.genruntimeconfig.cache
 E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ref\ConsoleClicker.dll
+E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ConsoleClicker.sourcelink.json
