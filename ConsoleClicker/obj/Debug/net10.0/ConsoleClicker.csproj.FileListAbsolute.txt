@@ -1,0 +1,14 @@
+E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ConsoleClicker.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ConsoleClicker.AssemblyInfoInputs.cache
+E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ConsoleClicker.AssemblyInfo.cs
+E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ConsoleClicker.csproj.CoreCompileInputs.cache
+E:\Rider projects\ConsoleClicker\ConsoleClicker\bin\Debug\net10.0\ConsoleClicker.exe
+E:\Rider projects\ConsoleClicker\ConsoleClicker\bin\Debug\net10.0\ConsoleClicker.deps.json
+E:\Rider projects\ConsoleClicker\ConsoleClicker\bin\Debug\net10.0\ConsoleClicker.runtimeconfig.json
+E:\Rider projects\ConsoleClicker\ConsoleClicker\bin\Debug\net10.0\ConsoleClicker.dll
+E:\Rider projects\ConsoleClicker\ConsoleClicker\bin\Debug\net10.0\ConsoleClicker.pdb
+E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ConsoleClicker.dll
+E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\refint\ConsoleClicker.dll
+E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ConsoleClicker.pdb
+E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ConsoleClicker.genruntimeconfig.cache
+E:\Rider projects\ConsoleClicker\ConsoleClicker\obj\Debug\net10.0\ref\ConsoleClicker.dll
