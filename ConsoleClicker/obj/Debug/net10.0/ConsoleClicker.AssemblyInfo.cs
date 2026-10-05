@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleClicker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5426623e085bb9c8c9859fe5ae86f81f0cfacb00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ca53e3b00bf0140f848f0589e4744af761257c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleClicker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleClicker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,4 @@
-﻿using ClickerConstructor;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace ConsoleClicker
 {
@@ -21,7 +20,6 @@ namespace ConsoleClicker
                 new Clicker(0,ConsoleKey.K),
                 new Clicker(0,ConsoleKey.L)
                 };
-                
             }
             
             while (true)
@@ -31,6 +29,7 @@ namespace ConsoleClicker
                 {
                     clicker.Write();
                 }
+                
                 Console.WriteLine("Press M to modify the interaction key for clickers");
 
                 ConsoleKeyInfo KeyPress = Console.ReadKey();
@@ -38,12 +37,8 @@ namespace ConsoleClicker
                 {
                     clicker.KeyPressHandler(KeyPress.Key);
                 }
-
                 Save(clickers);
             }
-            
-            
-
         }
 
         private static Clicker[] Load()
@@ -59,9 +54,5 @@ namespace ConsoleClicker
             var json = JsonSerializer.Serialize(clickers,options);
             File.WriteAllText(fileName, json);
         }
-
-        
-        
     }
-    
 }

@@ -1,8 +1,6 @@
-﻿using ConsoleClicker;
-
-namespace ClickerConstructor
+﻿namespace ConsoleClicker
 {
-    class Clicker
+    internal class Clicker
     {
         private int clicks;
         
