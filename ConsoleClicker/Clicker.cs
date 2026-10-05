@@ -36,25 +36,15 @@
 
         public void KeyPressHandler(ConsoleKey Key)
         { 
-            //if (InteractKey == Key) 
-            //{
-            //    Clicks++;
-            //}
-
             switch (Key)
             {
                 case ConsoleKey k when k == InteractKey:
                     Clicks++;
                     break;
                 case ConsoleKey k when k == ConsoleKey.M:
-                    //Console.WriteLine("which clicker do you want to change?");
-                    //var tochange = Console.ReadKey().Key;
-                    //if(InteractKey == tochange)
-                    //{
                         Console.Clear();
                         Console.WriteLine($"press the key you want to change {InteractKey} into");
                         InteractKey = Console.ReadKey().Key;
-                    //}
                     break;
             }
         }
