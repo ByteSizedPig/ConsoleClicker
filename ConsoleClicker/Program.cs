@@ -27,16 +27,17 @@ namespace ConsoleClicker
                 Console.Clear();
                 foreach (var clicker in clickers)
                 {
-                    clicker.Write();
+                    ConsoleOperation.WriteString($"{clicker.Clicks} : {clicker.InteractKey} Clicker");
                 }
+                ConsoleOperation.WriteString("Press M to modify the interaction key for clickers");
                 
-                Console.WriteLine("Press M to modify the interaction key for clickers");
-
-                ConsoleKeyInfo KeyPress = Console.ReadKey();
+                ConsoleKeyInfo KeyPress = ConsoleOperation.ReadKey();
                 foreach (var clicker in clickers)
                 {
-                    clicker.KeyPressHandler(KeyPress.Key);
+                    ConsoleOperation.KeyPressHandler(KeyPress.Key, clicker, clickers);
+                    if (KeyPress.Key == ConsoleKey.M) break;
                 }
+                Console.WriteLine(clickers[1].InteractKey);
                 Save(clickers);
             }
         }

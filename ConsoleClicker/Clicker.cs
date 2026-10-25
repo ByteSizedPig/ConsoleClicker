@@ -3,11 +3,19 @@
     internal class Clicker
     {
         private int clicks;
-        
-        //when using JsonSerializer this counts as a field because it doesnt have get and set
-        public ConsoleKey InteractKey;
+        private ConsoleKey interactKey;
         
         //when using JsonSerializer this counts as a property because of get and set
+        public ConsoleKey InteractKey
+        {
+            get { return interactKey; }
+            
+            private set
+            {
+                interactKey = value;
+            }
+        }
+        
         public int Clicks
         {
             get { return clicks; }
@@ -22,18 +30,12 @@
         }
 
         //when Deserializing json this constructor is what gets used even tho the JsonSerializer uses the public variables in the class
-        public Clicker(int clicks, ConsoleKey interactkey)
+        public Clicker(int clicks, ConsoleKey interactKey)
         {
             Clicks = clicks;
-            InteractKey = interactkey;
+            InteractKey = interactKey;
         }
-
-        public void Write()
-        {
-            Console.WriteLine($"{Clicks} : {InteractKey} Clicker");
-
-        }
-
+        
         public void KeyPressHandler(ConsoleKey Key)
         { 
             switch (Key)
@@ -42,11 +44,21 @@
                     Clicks++;
                     break;
                 case ConsoleKey k when k == ConsoleKey.M:
-                    Console.Clear();
-                    Console.WriteLine($"press the key you want to change {InteractKey} into");
+                    ConsoleOperation.ClearConsole();
+                    ConsoleOperation.WriteString($"press the key you want to change {InteractKey} into");
                     InteractKey = Console.ReadKey().Key;
                     break;
             }
+        }
+
+        public void ChangeInteractKey(ConsoleKey InputKey)
+        {
+            InteractKey = InputKey;
+        }
+
+        public void IncreaseClickCount()
+        {
+            Clicks++;
         }
     }
 }
